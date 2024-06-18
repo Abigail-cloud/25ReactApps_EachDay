@@ -4,6 +4,7 @@
 
 ![Alt text](./public/filter_author.png "Optional title")
 
+- Design from : https://www.uidesigndaily.com/posts/filter-2 
 
 # React + Vite
 
