@@ -2,52 +2,116 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #f3efef;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+*,
 ::after,
 ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body, html{
+
+body, html {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-.container{
-   height: calc(100vh - 40px); 
-  margin: 5rem; /* Adjust margin as needed */
-  background-color: #CC1758; /* Optional: for better visibility */
+.container {
+  height: calc(100vh - 40px); 
+  margin: 5rem; 
+  background-color: #CC1758; 
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box; 
 }
-.hidden-div{
+
+.hidden-div {
+  width: 20%;
+  max-width: 800px; /* Ensure hidden-div doesn't get too wide */
   height: calc(100vh - 40px);
   background-color: #BC0748; 
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .centered-div {
-  background-color: #c1d812; 
-  height: auto;
-  margin: 8rem 0;
+  background-color: #c1d812;
+  width: calc(100% + 10rem); /* Set the width to overlap with hidden-div */
+  max-width: none; /* Remove the max-width restriction */
+  margin: 0 -5rem; /* Use negative margin to overlap */
+  height: 80%;
   padding: 20px;
   border-radius: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h2{
+
+h2 {
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #1d1212;
+}
+
+li img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.highlighted {
+  border-radius: 10px;
+  background-color: yellow;
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  line-height: 20px; /* Center the text vertically */
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 20px;
+  padding-left: 40px; /* Add space for the icon */
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px;
 }
