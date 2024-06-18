@@ -1,7 +1,9 @@
 # Day 1 : Filter the Author
 - The Filter author mini app: filter the author with just basic react library by using the "useState" hook to get the by the id and name.
 - Font awesome icon was used to get a search icon in the search bar.
-<img src="./public/filter_author.png />
+
+![Alt text](./public/filter_author.png "Optional title")
+
 
 # React + Vite
 
