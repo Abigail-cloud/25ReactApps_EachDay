@@ -1,4 +1,4 @@
-# Day 1 : People's Birthday Today: A mini react app
+# Day 2 : People's Birthday Today: A mini react app
 - The Birthday_Now mini app: shows people whose birthday(s) is today with just basic react Js library by using the "useState" hook to get the by the id and name.
 - UseState hooks takes the initial state of a value or data as an argument and return a curent value and a function to update the value.
 - In this app it is return an array or when cleared it returns an empty array[].
